@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDD Frontend Example</title>
+    <link rel="icon" href="./img/icon.webp">
+    <link href="./lib/boostrap.min.css" rel="stylesheet" />
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <style>
+        .card-title {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 10px;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 300px;
+            background-color: #000;
+            object-fit: cover;
+        }
+
+        .color-lime-green {
+            background-color: #228B22;
+            border-color: #228B22;
+        }
+        .top-30 {
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="needs-validation" novalidate>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col col-md-4">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend" aria-label="Image Title Icon">💥</span>
+                            <label for="title" class="visually-hidden">Image Title</label>
+                            <input class="form-control" required placeholder="Image Title" type="text" id="title" aria-describedby="titleFeedback">
+                            <div class="invalid-feedback" id="titleFeedback">
+                                Please type a title for the image.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend" aria-label="Image URL Icon">📸</span>
+                            <label for="imageUrl" class="visually-hidden">Image URL</label>
+                            <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEULsr6Sa4x26URjpqAzBGlIUbwz-NruVjlQ&usqp=CAU -->
+                            <input class="form-control" required placeholder="https://img.com/erick.png" type="url" id="imageUrl" aria-describedby="urlFeedback">
+                            <div class="invalid-feedback" id="urlFeedback">
+                                Please type a valid URL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-2">
+                        <input class="btn btn-success color-lime-green" type="submit" id="btnSubmit" aria-label="Submit Form">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <main class="container">
+        <section id="card-list" class="row">
+            <article class="col-md-12 col-lg-4 col-sm-3 top-30">
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top card-img"
+                            src="./img/ai-alien.jpeg"
+                            alt="Image of an AI Alien">
+                        <figcaption>
+                            <h4 class="card-title">AI Alien</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="col-md-12 col-lg-4 col-sm-3 top-30">
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top card-img"
+                            src="./img/predator.jpeg"
+                            alt="Image of Predator Night Vision">
+                        <figcaption>
+                            <h4 class="card-title">Predator Night Vision</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="col-md-12 col-lg-4 col-sm-3 top-30">
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top card-img"
+                            src="./img/et-bilu.jpeg"
+                            alt="Image of ET Bilu">
+                        <figcaption>
+                            <h4 class="card-title">ET Bilu</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>

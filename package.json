@@ -1,0 +1,19 @@
+{
+  "name": "aula00-tests-frontend-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx browser-sync start -w --server ."
+  },
+  "keywords": [],
+  "author": "erickwendel",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "v20.12.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
