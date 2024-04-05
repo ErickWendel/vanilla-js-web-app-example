@@ -29,8 +29,8 @@ Feature: Image Registration
     And the new item should be stored in the localStorage
     Then The inputs should be cleared
 
-  Scenario: Refreshing the page after submitting an image
+  Scenario: Refreshing the page after submitting an image clicking in the submit button
     Given I am on the image registration page
-    Then I have submitted an image
+    Then I have submitted an image by clicking the submit button
     When I refresh the page
     Then I should still see the submitted image in the list of registered images
